@@ -43,7 +43,7 @@ export default function QuantLab() {
                     Quant Lab - Test Result
                 </h1>
                 <p className="text-sm text-gray-700 mb-2">
-                    Version 0.2 • Last updated: - April 19, 2026
+                    Version 0.2 • Last updated: April 19, 2026
                 </p>
 
                 <div className="grid grid-cols-1 gap-6">
