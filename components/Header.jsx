@@ -19,7 +19,7 @@ export default function Header() {
             <Link href="/infinity-bloom" className="text-gray-500 hover:text-gray-900 px-1 py-0.5 text-[13px]">
               Infinity Bloom
             </Link>
-            <Link href="/about" className="text-gray-500 hover:text-gray-900 px-1 py-0.5 text-[13px]">
+            <Link href="/careers" className="text-gray-500 hover:text-gray-900 px-1 py-0.5 text-[13px]">
               Careers
             </Link>
             <Link href="/contact" className="text-gray-500 hover:text-gray-900 px-1 py-0.5 text-[13px]">
