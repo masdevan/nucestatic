@@ -1,42 +1,129 @@
 import Image from "next/image";
+import Link from "next/link";
+import PageReveal from "@/components/PageReveal";
+
+const features = [
+  "Wide range of trading pairs",
+  "Portfolio management",
+  "Algorithm allocation & management",
+  "Economic calendar integration",
+];
 
 export default function InfinityBloom() {
   return (
-    <main className="bg-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">
-          Infinity Bloom - Terminal
-        </h1>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Last updated: April 5, 2026
-        </p>
+    <main className="bg-white">
+      <PageReveal>
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
+          <p className="reveal-badge text-xs font-bold tracking-widest text-[#800000] uppercase mb-4">
+            Product
+          </p>
+          <h1 className="reveal-title text-4xl md:text-5xl font-black text-gray-900 tracking-tight mb-6">
+            Infinity Bloom
+          </h1>
+          <p className="reveal-item text-2xl md:text-3xl font-bold text-[#800000] mb-8">
+            Terminal
+          </p>
+          <p className="reveal-desc text-lg text-gray-600 max-w-2xl leading-relaxed">
+            The first terminal developed as an experimental platform, built on the Python ecosystem. Available for free and open-source.
+          </p>
+        </section>
 
-        <h2 className="text-xl font-semibold text-gray-800 mb-4">
-          1. Base Information
-        </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Infinity Bloom Terminal is the first terminal developed as an experimental platform, built on the Python ecosystem. The system is relatively complex and still contains several limitations in its current stage.<br />
-          Despite this, Infinity Bloom Terminal is available for free and is open-source. It supports a wide range of trading pairs, along with portfolio management, algorithm allocation and management, and integration with economic calendar data.
-        </p>
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+          <div className="reveal-item border border-gray-100 rounded-2xl overflow-hidden mb-20">
+            <div className="aspect-[21/9] relative bg-gray-900">
+              <Image 
+                src="/demonstration/demonstration_1.png" 
+                alt="Infinity Bloom Terminal" 
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
 
-        <Image src="/demonstration/demonstration_1.png" alt="Infinity Bloom Terminal" width={1400} height={600} className="rounded-lg my-10 w-full h-auto" />
+          <div className="reveal-item grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+            <div>
+              <p className="text-xs font-bold tracking-widest text-[#800000] uppercase mb-4">
+                Overview
+              </p>
+              <h2 className="text-3xl font-black text-gray-900 mb-6">
+                Base Information
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Infinity Bloom Terminal is a relatively complex system developed as an experimental platform. While it still contains several limitations in its current stage, it offers powerful features for quantitative trading.
+              </p>
+              <ul className="space-y-4">
+                {features.map((f) => (
+                  <li key={f} className="flex items-center gap-3 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#800000]" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border border-gray-100 rounded-2xl overflow-hidden">
+              <div className="aspect-[16/10] relative bg-gray-900">
+                <Image 
+                  src="/demonstration/demonstration_2.png" 
+                  alt="Infinity Bloom Terminal Code" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
 
-        <h2 className="text-xl font-semibold text-gray-800 mb-4">
-          2. Source Code
-        </h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          The source code of Infinity Bloom Terminal is available on GitHub at the following link: <a href="https://github.com/masdevan/infinity-bloom-terminal-berg-automation" target="_blank" className="text-blue-600 hover:underline">Github Source</a>
-        </p>
+          <div className="reveal-item bg-gray-50 rounded-2xl p-10">
+            <p className="text-xs font-bold tracking-widest text-[#800000] uppercase mb-4">
+              Open Source
+            </p>
+            <h2 className="text-3xl font-black text-gray-900 mb-6">
+              Source Code
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-8 max-w-xl">
+              The source code is available on GitHub. Feel free to explore, contribute, and build upon our work.
+            </p>
+            <a 
+              href="https://github.com/masdevan/infinity-bloom-terminal-berg-automation" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#800000] text-white font-bold rounded-lg hover:bg-[#6b0000] transition-colors cursor-pointer"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </section>
 
-        <Image src="/demonstration/demonstration_2.png" alt="Infinity Bloom Terminal" width={1400} height={600} className="rounded-lg my-10 w-full h-auto" />
-
-        <h2 className="text-xl font-semibold text-gray-800 mb-4">
-          3. Contact Us
-        </h2>
-        <p className="text-gray-700 leading-relaxed">
-          If you have any questions about this please contact us at: <a href="/contact" className="text-blue-600 hover:underline">Contact Us</a>
-        </p>
-      </div>
+        <section className="relative overflow-hidden">
+          <div 
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: "url('/pattern.jpg')",
+              backgroundRepeat: "repeat",
+              backgroundSize: "300px",
+            }}
+          />
+          <div className="absolute inset-0 z-0 bg-black/70" />
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+            <h2 className="reveal-title text-3xl md:text-5xl font-black text-white mb-8">
+              Questions?
+            </h2>
+            <p className="reveal-desc text-white/60 text-lg mb-12 max-w-xl mx-auto">
+              Get in touch if you have any questions about Infinity Bloom Terminal.
+            </p>
+            <div className="reveal-item">
+              <Link 
+                href="/contact"
+                className="inline-block px-10 py-4 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-colors cursor-pointer"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </section>
+      </PageReveal>
     </main>
   );
 }

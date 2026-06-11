@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-white border-t h-17.5 flex items-center justify-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} NuceStatic. All rights reserved.
+    <footer className="bg-white pt-8 pb-16 border-t border-gray-100">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <p className="text-xs font-medium text-gray-400 tracking-widest uppercase">
+          &copy; {new Date().getFullYear()} NuceStatic. Independently Engineered.
         </p>
       </div>
     </footer>

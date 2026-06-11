@@ -1,65 +1,103 @@
+import Link from "next/link";
+import PageReveal from "@/components/PageReveal";
+
 export default function Contact() {
   return (
-    <main className="bg-white py-10 sm:py-30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">
-          Contact Nucestatic
-        </h1>
-
-        <div className="space-y-6">
-          <p className="text-gray-700 leading-relaxed">
-            We welcome your questions, feedback, and inquiries about Nucestatic. Whether you're interested in our research, have a business inquiry, or want to learn more about our technology, please don't hesitate to reach out.
+    <main className="bg-white">
+      <PageReveal>
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24">
+          <p className="reveal-badge text-xs font-bold tracking-widest text-[#800000] uppercase mb-4">
+            Contact
           </p>
+          <h1 className="reveal-title text-4xl md:text-5xl font-black text-gray-900 tracking-tight mb-6">
+            Get in Touch
+          </h1>
+          <p className="reveal-desc text-lg text-gray-600 max-w-2xl leading-relaxed">
+            We welcome your questions, feedback, and inquiries. Whether you&apos;re interested in our research, have a business inquiry, or want to learn more about our technology, please reach out.
+          </p>
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                General Inquiries
-              </h2>
-              <p className="text-gray-700 mb-2">
-                For general questions about Nucestatic, our research, or services:
-              </p>
-              <p className="mb-4">
-                <a href="mailto:masdevansugiharta@gmail.com" className="block text-blue-600 hover:underline">
-                  masdevansugiharta@gmail.com
-                </a>
-              </p>
-
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Business Partnerships
-              </h2>
-              <p className="text-gray-700 mb-2">
-                For business development, partnerships, or collaboration opportunities:
-              </p>
-              <p className="mb-4">
-                <a href="mailto:masdevansugiharta@gmail.com" className="block text-blue-600 hover:underline">
-                  masdevansugiharta@gmail.com
-                </a>
-              </p>
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div className="reveal-item p-8 border border-gray-100 rounded-2xl hover:border-[#800000]/20 transition-colors">
+              <div className="w-10 h-10 bg-[#800000]/5 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-5 h-5 text-[#800000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
+              <p className="text-gray-500 text-sm mb-6">For general and business inquiries:</p>
+              <a 
+                href="mailto:masdevansugiharta@gmail.com" 
+                className="text-[#800000] font-bold hover:underline break-all"
+              >
+                masdevansugiharta@gmail.com
+              </a>
             </div>
 
-            <div>
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Office Location
-              </h2>
-              <address className="text-gray-700 space-y-2">
-                Jl. Raya Ampel<br />
-                Ampel, Boyolali, Jawa Tengah 57352<br />
-                Indonesia
-              </address>
+            <div className="reveal-item p-8 border border-gray-100 rounded-2xl hover:border-[#800000]/20 transition-colors">
+              <div className="w-10 h-10 bg-[#800000]/5 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-5 h-5 text-[#800000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">WhatsApp</h3>
+              <p className="text-gray-500 text-sm mb-6">Fast response for urgent matters:</p>
+              <a 
+                href="https://wa.me/6285728133473" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#800000] font-bold hover:underline"
+              >
+                +62 857 2813 3473
+              </a>
+            </div>
 
-              <h2 className="text-xl font-semibold text-gray-800 mb-4 mt-4">
-                WhatsApp
-              </h2>
-              <p className="mb-4">
-                <a href="tel:+6285728133473" className="block text-blue-600 hover:underline">
-                  +62 857 2813 3473
-                </a>
-              </p>
+            <div className="reveal-item p-8 border border-gray-100 rounded-2xl hover:border-[#800000]/20 transition-colors">
+              <div className="w-10 h-10 bg-[#800000]/5 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-5 h-5 text-[#800000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
+              <p className="text-gray-500 text-sm mb-6">Our headquarters in Indonesia:</p>
+              <address className="not-italic text-gray-900 font-bold">
+                Ampel, Boyolali<br />
+                Jawa Tengah 57352
+              </address>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section className="relative overflow-hidden">
+          <div 
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: "url('/pattern.jpg')",
+              backgroundRepeat: "repeat",
+              backgroundSize: "300px",
+            }}
+          />
+          <div className="absolute inset-0 z-0 bg-black/70" />
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+            <h2 className="reveal-title text-3xl md:text-5xl font-black text-white mb-8">
+              Ready to collaborate?
+            </h2>
+            <p className="reveal-desc text-white/60 text-lg mb-12 max-w-xl mx-auto">
+              Join us in building the next generation of trading infrastructure.
+            </p>
+            <div className="reveal-item">
+              <Link 
+                href="/careers"
+                className="inline-block px-10 py-4 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-colors cursor-pointer"
+              >
+                View Careers
+              </Link>
+            </div>
+          </div>
+        </section>
+      </PageReveal>
     </main>
   );
 }
