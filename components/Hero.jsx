@@ -40,11 +40,11 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-[90vh] flex items-center bg-white pb-48"
+      className="relative h-screen flex items-center bg-white pb-36"
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 -left-20 w-[500px] h-[500px] rounded-full bg-[#800000]/5" />
-        <div className="absolute bottom-24 -right-20 w-[400px] h-[400px] rounded-full bg-[#800000]/5" />
+        <div className="absolute top-20 -left-20 w-125 h-125 rounded-full bg-[#800000]/5" />
+        <div className="absolute bottom-24 -right-20 w-100 h-100 rounded-full bg-[#800000]/5" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12 py-32">
