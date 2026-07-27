@@ -1,17 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function CookieConsent() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const hasAccepted = localStorage.getItem("nucestatic_cookies");
-    if (!hasAccepted) {
-      setIsVisible(true);
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window !== "undefined") {
+      return !localStorage.getItem("nucestatic_cookies");
     }
-  }, []);
+    return false;
+  });
 
   const handleAccept = () => {
     localStorage.setItem("nucestatic_cookies", "accepted");

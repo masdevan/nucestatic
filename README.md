@@ -1,18 +1,26 @@
-<img src="https://i.imgur.com/vnCGuJ8.png" alt="NuceStatic Banner" width="100%">
+# Nucestatic
 
-# NuceStatic
+Automated asset management system — corporate website built with Next.js.
 
-A lightweight and high-performance static web platform built for modern deployment. Featuring responsive UI, optimized assets, clean architecture, and SEO-friendly structure.
+## Tech Stack
 
-## Overview
+- **Framework:** Next.js 16 (App Router)
+- **UI:** React 19, Tailwind CSS v4
+- **Animations:** GSAP 3 + ScrollTrigger
+- **Font:** Montserrat (Google Fonts)
 
-NuceStatic is a modern static web platform designed with a focus on performance, simplicity, and scalability. It delivers a clean user experience while maintaining fast loading times and efficient resource management.
+## Getting Started
 
-## Features
+```bash
+npm install
+npm run dev
+```
 
-* Fast and optimized performance
-* Responsive design across devices
-* Clean and maintainable codebase
-* SEO-friendly structure
-* Modern deployment workflow
-* Optimized asset delivery
+Open [http://localhost:3000](http://localhost:3000).
+
+## Build
+
+```bash
+npm run build
+npm start
+```

@@ -1,5 +1,3 @@
-const nextConfig = {
-  /* config options here */
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
