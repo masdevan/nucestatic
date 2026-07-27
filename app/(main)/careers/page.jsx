@@ -25,7 +25,7 @@ export default function Careers() {
           {positions.map((position) => (
             <div
               key={position.title}
-              className="border border-gray-100 rounded-xl p-8 hover:bg-gray-50 transition-colors"
+              className="border border-gray-200 rounded-xl p-8 hover:bg-gray-50 transition-colors"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
                 <div className="flex-1">

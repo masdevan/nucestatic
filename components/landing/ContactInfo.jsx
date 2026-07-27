@@ -14,7 +14,7 @@ export default function ContactInfo() {
               <p className="text-2xl font-bold text-white">
                 {contactDetails.headquarters.name}
               </p>
-              <p className="text-xl text-[#b6b6b6] leading-relaxed">
+              <p className="text-xl text-gray-300 leading-relaxed">
                 {contactDetails.headquarters.lines.map((line, i) => (
                   <span key={i}>{line}<br /></span>
                 ))}
@@ -30,7 +30,7 @@ export default function ContactInfo() {
               <p className="text-2xl font-bold text-white">
                 {contactDetails.connect.name}
               </p>
-              <p className="text-xl text-[#b6b6b6] leading-relaxed">
+              <p className="text-xl text-gray-300 leading-relaxed">
                 {contactDetails.connect.lines.map((line, i) => (
                   <span key={i}>{line}<br /></span>
                 ))}

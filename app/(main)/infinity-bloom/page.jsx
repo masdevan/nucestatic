@@ -25,7 +25,7 @@ export default function InfinityBloom() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
-        <div className="border border-gray-100 rounded-2xl overflow-hidden mb-20">
+        <div className="border border-gray-200 rounded-2xl overflow-hidden mb-20">
           <div className="aspect-[21/9] relative bg-gray-900">
             <Image
               src="/demonstration/demonstration_1.png"
@@ -49,14 +49,14 @@ export default function InfinityBloom() {
             </p>
             <ul className="space-y-4">
               {features.map((feature) => (
-                <li key={feature} className="flex items-center gap-3 text-gray-700">
+                <li key={feature} className="flex items-center gap-3 text-gray-600">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#800000]" />
                   {feature}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="border border-gray-100 rounded-2xl overflow-hidden">
+          <div className="border border-gray-200 rounded-2xl overflow-hidden">
             <div className="aspect-[16/10] relative bg-gray-900">
               <Image
                 src="/demonstration/demonstration_2.png"
