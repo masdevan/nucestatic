@@ -1,11 +1,9 @@
 import Link from "next/link";
 import PatternBackground from "@/components/PatternBackground";
 import { positions, values } from "@/data/careers";
+import { buildMetadata } from "@/data/seo";
 
-export const metadata = {
-  title: "Careers | Nucestatic",
-  description: "Join Nucestatic in building the future of quantitative trading infrastructure.",
-};
+export const metadata = buildMetadata("/careers")
 
 export default function Careers() {
   return (

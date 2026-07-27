@@ -1,11 +1,9 @@
 import Link from "next/link";
 import PatternBackground from "@/components/PatternBackground";
 import { contactDetails } from "@/data/contact";
+import { buildMetadata } from "@/data/seo";
 
-export const metadata = {
-  title: "Contact | Nucestatic",
-  description: "Get in touch with Nucestatic for inquiries about our quantitative research and trading infrastructure.",
-};
+export const metadata = buildMetadata("/contact")
 
 export default function Contact() {
   return (

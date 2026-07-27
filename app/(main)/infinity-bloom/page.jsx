@@ -2,11 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import PatternBackground from "@/components/PatternBackground";
 import { features } from "@/data/infinity-bloom";
+import { buildMetadata } from "@/data/seo";
 
-export const metadata = {
-  title: "Infinity Bloom | Nucestatic",
-  description: "An open-source experimental terminal platform built on the Python ecosystem for quantitative trading.",
-};
+export const metadata = buildMetadata("/infinity-bloom")
 
 export default function InfinityBloom() {
   return (

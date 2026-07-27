@@ -6,7 +6,6 @@ Automated asset management system — corporate website built with Next.js.
 
 - **Framework:** Next.js 16 (App Router)
 - **UI:** React 19, Tailwind CSS v4
-- **Animations:** GSAP 3 + ScrollTrigger
 - **Font:** Montserrat (Google Fonts)
 
 ## Getting Started

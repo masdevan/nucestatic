@@ -1,11 +1,9 @@
 import Link from "next/link";
 import PatternBackground from "@/components/PatternBackground";
 import { concepts } from "@/data/trade-alchemy";
+import { buildMetadata } from "@/data/seo";
 
-export const metadata = {
-  title: "Trade Alchemy | Nucestatic",
-  description: "Advanced research platform for quantitative trading with high-performance architecture and dynamic algorithm management.",
-};
+export const metadata = buildMetadata("/trade-alchemy")
 
 export default function TradeAlchemy() {
   return (

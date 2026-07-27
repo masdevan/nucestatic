@@ -1,11 +1,9 @@
 import Link from "next/link";
 import PatternBackground from "@/components/PatternBackground";
 import { pillars } from "@/data/about";
+import { buildMetadata } from "@/data/seo";
 
-export const metadata = {
-  title: "About | Nucestatic",
-  description: "Building the future of asset management with machine learning, statistical modeling, and high-performance computing.",
-};
+export const metadata = buildMetadata("/about")
 
 export default function About() {
   return (

@@ -1,21 +1,19 @@
-import { dmcaSections } from "@/data/legal/dmca";
+import { privacySections } from "@/data/legal/privacy";
+import { buildMetadata } from "@/data/seo";
 
-export const metadata = {
-  title: "DMCA Policy | Nucestatic",
-  description: "Nucestatic DMCA Policy - copyright infringement notification and counter-notification procedures.",
-};
+export const metadata = buildMetadata("/privacy")
 
-export default function DMCA() {
+export default function PrivacyPolicy() {
   return (
     <main className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">
-          DMCA Policy
+          Privacy Policy
         </h1>
         <p className="text-gray-700 leading-relaxed mb-4">
           Last updated: April 5, 2026
         </p>
-        {dmcaSections.map((section) => (
+        {privacySections.map((section) => (
           <div key={section.title}>
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
               {section.title}
@@ -25,13 +23,6 @@ export default function DMCA() {
                 {paragraph}
               </p>
             ))}
-            {section.list && (
-              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                {section.list.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            )}
           </div>
         ))}
       </div>

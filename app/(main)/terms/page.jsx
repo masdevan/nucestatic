@@ -1,9 +1,7 @@
 import { termsSections } from "@/data/legal/terms";
+import { buildMetadata } from "@/data/seo";
 
-export const metadata = {
-  title: "Terms of Service | Nucestatic",
-  description: "Nucestatic Terms of Service - terms and conditions for using our website and services.",
-};
+export const metadata = buildMetadata("/terms")
 
 export default function TermsOfService() {
   return (
