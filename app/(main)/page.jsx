@@ -1,5 +1,6 @@
-import ContactInfo from "@/components/ContactInfo";
-import Hero from "@/components/Hero";
+import Hero from "@/components/landing/Hero";
+import ContactInfo from "@/components/landing/ContactInfo";
+import JournalCta from "@/components/landing/JournalCta";
 import { buildMetadata } from "@/data/seo";
 
 export const metadata = buildMetadata("/")
@@ -9,6 +10,7 @@ export default function Home() {
     <div className="bg-white">
       <Hero />
       <ContactInfo />
+      <JournalCta />
     </div>
   );
 }
